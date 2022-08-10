@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <Center>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bitcoin Trading!</title>
+  </head>
+<p class="heading">Analyse Bitcoin trajet for maybe best trade!</p>
+<section>
+  <label><input type="radio" name="api" value="sync"> Old API</label><br/>
+  <label><input type="radio" name="api" value="async" checked> New API</label>
+</section>
+<section>
+  <p>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+    <textarea class="js-cuttextarea" id="wrap"  name="input"></textarea>
+  </p>
+
+  <p>
+    <input type="Submit" class="js-textareacutbtn" value="Clear"></input>
+    <input type="Submit" class="js-textareapastebtn" onclick="calc()" name="calc" value="Calculate"></input></button>
+    </form>
+  </p>
+</section>
+
+<section>
+  <h2>Contact me on bugs</h2>
+  <p>Email me at <a class="js-emaillink" href="mailto:sea#0666@trade.com">sea#0666@trade.com</a></p>
+  <p>
+    <button class="js-emailcopybtn">Copy Email Address</button>
+  </p>
+</section>
+
+<p id="logTarget"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<style>
+body {
+  font-family: Verdana, sans-serif;
+}
+  </style>
+  
